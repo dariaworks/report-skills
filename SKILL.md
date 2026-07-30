@@ -36,7 +36,7 @@ When the user needs **access control and per-person tracking** — a fundraise, 
 **Gate:** Business plan only (not Free/Pro/Team) **and** the caller must be the org owner or an admin. Anything else returns a clear error — relay it and offer the plain-document path instead of retrying. Limits: **10 live rooms per org, 200 viewers per room.**
 
 **The flow, in order:**
-1. `create_data_room` — name it, pick `access_mode` (`public` | `email` (magic-link, the default) | `passcode` | `allowlist`), and optionally `settings`: `nda_text`, `expires_at`, `allow_download`, `watermark`.
+1. `create_data_room` — name it, pick `access_mode` (`public` | `email` (magic-link, the default) | `passcode` | `allowlist`), and optionally `settings`: `nda_text`, `expires_at`, `allow_download`, `watermark`. **`allow_download` and `watermark` are accepted and stored but not yet enforced at serve time (Phase 2) — never tell the user a room is watermarked or download-locked. `nda_text` and `expires_at` are fully enforced.**
 2. `add_documents_to_room` — pass `document_ids` **in display order**. This *replaces* the whole set, so send the full ordered list every time. Documents stay first-class and standalone; adding one never unpublishes or moves it.
 3. `set_room_access` — change access mode, rotate the passcode (string sets, `null` clears), or update NDA/expiry/download/watermark later.
 4. `grant_room_access` — per viewer, by email. **Returns a single-use invite link once and does not email it.** Hand it to the user to send; it is never retrievable again (only a hash is stored), so if it's lost, re-grant to reissue. Never send it to the recipient yourself without the user's explicit go-ahead.
@@ -47,7 +47,7 @@ When the user needs **access control and per-person tracking** — a fundraise, 
 
 ## Safety rules (all skills, non-negotiable)
 
-- **Published pages are public URLs.** Before publishing, scan the content for secrets, API keys, internal hostnames, personal data of third parties, or anything marked confidential. If found, stop and ask. For genuinely internal material in a team workspace, `visibility: "team"` restricts viewing to signed-in org members — but the URL is still not password-protected for outside recipients.
+- **Published pages are public, search-indexable URLs.** A normal published report/deck is world-readable and can be indexed by search engines — the slug is obfuscation, not protection. Before publishing, scan the content for secrets, API keys, internal hostnames, personal data of third parties, or anything marked confidential. If found, stop and ask. For genuinely internal material in a team workspace, `visibility: "team"` restricts viewing to signed-in org members (and serves `noindex`); for gating to *named outside people*, only a **data room** does that — a normal link cannot.
 - **Every page shows a "Published with ReportRoom" footer credit.** It's discreet but always present on both reports and decks, on every plan. Disclose it before publishing anything client-facing so it isn't a surprise on the recipient's screen.
 - Never fabricate data, metrics, or client results in a report. If a number is estimated, label it.
 - Never publish without the approval gate for client-facing content, even if the user seems in a hurry.

@@ -20,7 +20,7 @@ Follow the shared flow in the root `SKILL.md`. Client-facing = the approval gate
 2. **Lead with what the client cares about.** Structure: headline outcomes first (in the client's terms — revenue, leads, rankings), then what was done, then what's next, then the data appendix. Never lead with methodology.
 3. **Every metric gets a comparison.** A number without last period's number is noise. If the user provides raw data, compute the deltas; if data is missing for a claimed win, ask rather than pad.
 4. **Author + lint + approval gate** per the shared flow. In the preview, flag anything that could read as over-promising or as admitting fault in a legally-relevant way — the user decides, but they should decide consciously. Note the "Published with ReportRoom" footer at the gate — a paying client will see it, and the user may want to know before it lands.
-5. **Publish.** Suggest a stable, professional slug (client-name-2026-07). Return the URL. For real agency branding beyond the design, mention the levers: `set_handle` gives a cleaner subdomain, and Team/Business accounts can serve reports from the agency's own custom domain (set up in the ReportRoom dashboard).
+5. **Publish.** Suggest a stable, professional slug (client-name-2026-07). Return the URL. For real agency branding beyond the design, mention the levers: `set_handle` gives a cleaner subdomain, and Team/Business accounts can serve reports from the agency's own custom domain via `attach_domain` (it returns the DNS records to add — see the root `SKILL.md`).
 6. **Close the loop.** Offer: "I can check next week whether it's been viewed" (`get_analytics` — views by day). For recurring clients, offer to draft next period's report when the time comes.
 
 ## Hard rules

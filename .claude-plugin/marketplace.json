@@ -5,7 +5,7 @@
     "url": "https://github.com/dashaworks"
   },
   "metadata": {
-    "description": "Claude Code and Codex skills for AI reports, decks and client sharing: publish research as live web reports, recurring client reports, view-tracked proposals, responsive slide decks, and a design-polish pass — all via the ReportRoom MCP with view analytics returned to the agent."
+    "description": "AI report generator skills for Claude Code and Codex: publish research as live web reports, recurring client reports, view-tracked proposals (a DocSend alternative for agent-made documents), responsive slide decks, and a design-polish pass — all via the ReportRoom MCP with view analytics returned to the agent."
   },
   "plugins": [
     {
@@ -22,11 +22,14 @@
       "keywords": [
         "reports",
         "ai-report-generator",
+        "ai-report-writer",
         "client-reporting",
         "presentations",
         "decks",
         "document-sharing",
+        "docsend-alternative",
         "claude-skills",
+        "claude-code-skills",
         "codex-skills",
         "anthropic",
         "mcp",

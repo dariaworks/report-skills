@@ -1,6 +1,6 @@
 {
   "name": "report-skills",
-  "description": "5 Claude Code and Codex skills for AI reports, decks and client sharing: report-publisher, client-reporter, proposal-tracker, deck-publisher, report-designer. Publish agent-made content as beautiful live pages via the ReportRoom MCP, with aggregate view analytics reported back.",
+  "description": "AI report generator and report writer skills for Claude Code and Codex: report-publisher, client-reporter, proposal-tracker, deck-publisher, report-designer. Publish agent-made reports, client reports and decks as beautiful live pages via the ReportRoom MCP — a tracked DocSend alternative with aggregate view analytics reported back.",
   "version": "0.2.0",
   "author": {
     "name": "Dasha Bulaeva",
@@ -10,11 +10,18 @@
   "homepage": "https://github.com/dashaworks/report-skills",
   "keywords": [
     "reports",
+    "ai-report-generator",
+    "ai-report-writer",
     "client-reporting",
+    "client-reports",
     "decks",
     "presentations",
+    "document-sharing",
+    "docsend-alternative",
     "claude-skills",
+    "claude-code-skills",
     "codex-skills",
-    "mcp"
+    "mcp",
+    "analytics"
   ]
 }

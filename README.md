@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.jpg" alt="Report Skills — AI report generator skills for Claude Code and Codex: AI reports, decks and client reports published via the ReportRoom MCP" width="900" />
+  <img src=".github/social-preview.png" alt="Report Skills — AI report generator skills for Claude Code and Codex: AI reports, decks and client reports published via the ReportRoom MCP" width="900" />
 </p>
 
 # Report Skills — Claude Code & Codex skills for AI reports, decks & client reports

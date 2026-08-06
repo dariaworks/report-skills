@@ -1,6 +1,6 @@
 {
   "name": "report-skills",
-  "description": "AI report generator and report writer skills for Claude Code and Codex: report-publisher, client-reporter, proposal-tracker, deck-publisher, report-designer. Publish agent-made reports, client reports and decks as beautiful live pages via the ReportRoom MCP — a tracked DocSend alternative with aggregate view analytics reported back.",
+  "description": "AI report generator and report writer skills for Claude Code and Codex: report-publisher, client-reporter, proposal-tracker, deck-publisher, report-designer. Publish agent-made reports, client reports and decks as designed live web pages via the ReportRoom MCP — a tracked DocSend alternative with aggregate view analytics reported back.",
   "version": "0.2.0",
   "author": {
     "name": "Dasha Bulaeva",

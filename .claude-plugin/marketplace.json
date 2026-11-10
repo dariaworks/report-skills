@@ -2,7 +2,7 @@
   "name": "report-skills",
   "owner": {
     "name": "Dasha Bulaeva",
-    "url": "https://github.com/dashaworks"
+    "url": "https://github.com/dariaworks"
   },
   "metadata": {
     "description": "AI report generator skills for Claude Code and Codex: publish research as live web reports, recurring client reports, view-tracked proposals (a DocSend alternative for agent-made documents), responsive slide decks, and a design-polish pass — all via the ReportRoom MCP with view analytics returned to the agent."
@@ -15,9 +15,9 @@
       "version": "0.2.0",
       "author": {
         "name": "Dasha Bulaeva",
-        "url": "https://github.com/dashaworks"
+        "url": "https://github.com/dariaworks"
       },
-      "homepage": "https://github.com/dashaworks/report-skills",
+      "homepage": "https://github.com/dariaworks/report-skills",
       "license": "MIT",
       "keywords": [
         "reports",

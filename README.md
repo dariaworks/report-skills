@@ -29,7 +29,7 @@
 ### Claude Code (CLI)
 
 ```bash
-/plugin marketplace add dashaworks/report-skills
+/plugin marketplace add dariaworks/report-skills
 /plugin install report-skills@report-skills
 ```
 
@@ -38,18 +38,18 @@
 1. Open https://claude.ai/code
 2. Go to **Skills** in the sidebar
 3. Click **Add from GitHub**
-4. Paste: `dashaworks/report-skills`
+4. Paste: `dariaworks/report-skills`
 
 ### Claude Desktop (Mac / Windows)
 
 1. Click **Customize** → **+** next to **Personal plugins** → **Add marketplace**
-2. Choose **Add from a repository** and paste: `dashaworks/report-skills`
+2. Choose **Add from a repository** and paste: `dariaworks/report-skills`
 3. Install the plugin and start a new conversation
 
 ### Codex CLI
 
 ```bash
-codex plugin marketplace add dashaworks/report-skills
+codex plugin marketplace add dariaworks/report-skills
 codex plugin add report-skills@report-skills
 ```
 
@@ -58,7 +58,7 @@ codex plugin add report-skills@report-skills
 Install the five skills into any agent that reads `SKILL.md` (Claude Code, Codex, and others) with Vercel's `skills` CLI:
 
 ```bash
-npx skills add https://github.com/dashaworks/report-skills/tree/main/skills
+npx skills add https://github.com/dariaworks/report-skills/tree/main/skills
 ```
 
 ## How do I publish a report from Claude Code?
